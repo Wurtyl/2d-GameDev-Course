@@ -15,12 +15,14 @@ script = ExtResource("2")
 tile_set = ExtResource("2_vnf5n")
 format = 2
 layer_0/name = "Bridges"
+layer_0/tile_data = PackedInt32Array(-131079, 65536, 1, -131078, 0, 0, -65542, 196608, 1, -6, 196608, 1, 65530, 131072, 0, 65531, 131072, 1, -458752, 327680, 1, -393216, 131072, 0, -393214, 0, 1, -393215, 0, 1, -393213, 0, 0, -327677, 262144, 1)
 metadata/_edit_lock_ = true
 
 [node name="InvisibleWalls" type="TileMap" parent="."]
 tile_set = ExtResource("3")
 format = 2
 layer_0/name = "Invisible walls"
+layer_0/tile_data = PackedInt32Array(131066, 0, 0, -196614, 0, 0, -196613, 65536, 0, -393212, 0, 0, -458749, 0, 0, -327681, 0, 0, -458748, 65536, 0)
 metadata/_edit_lock_ = true
 
 [node name="Player" parent="." instance=ExtResource("4_gvkau")]
