@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="M4. To Space and Beyond (Workbook)"
-run/main_scene="res://Lessons/Ship.tscn"
+run/main_scene="res://Lessons/space_level.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://assets/ship.png"
 
