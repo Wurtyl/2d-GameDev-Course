@@ -9,16 +9,17 @@ var target_position := Vector2(0, 0)
 
 var coins := 0
 
+func set_coin_count(new_coin_count):
+	coins = new_coin_count 
+	get_node("UI/coin_count")
 
 func _ready() -> void:
 	area_entered.connect(_on_area_entered)
 	set_process(false)
 
-
 func set_target_position(new_target_position: Vector2) -> void:
 	target_position = new_target_position
 	set_process(true)
-
 
 func _process(delta: float) -> void:
 	var desired_velocity := position.direction_to(target_position) * max_speed
