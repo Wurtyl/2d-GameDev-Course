@@ -1,12 +1,13 @@
 [gd_scene load_steps=4 format=3 uid="uid://cu5ie6h2sh178"]
 
-[ext_resource type="Script" path="res://lessons/health_pack.gd" id="1_c0udc"]
+[ext_resource type="Script" path="res://lessons/item.gd" id="1_c0udc"]
 [ext_resource type="Texture2D" uid="uid://dknpi2mq4dhpa" path="res://assets/health_icon.svg" id="2_2xgxf"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_5pufd"]
 radius = 22.0
 
-[node name="HealthPack" type="Area2D"]
+[node name="HealthPack" type="Area2D" groups=["healing_item"]]
+collision_layer = 2
 script = ExtResource("1_c0udc")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
