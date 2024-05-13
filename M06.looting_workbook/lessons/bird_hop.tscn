@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://c4p5dhy646wmc"]
+
+[ext_resource type="Script" path="res://lessons/bird_hop.gd" id="1_a3r0x"]
+[ext_resource type="Texture2D" uid="uid://bwhshkk62k3bh" path="res://assets/bird/sparrow.png" id="2_prqfp"]
+[ext_resource type="PackedScene" uid="uid://dnetm54guji21" path="res://assets/bird/shadow.tscn" id="3_1f0dx"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5gnyh"]
+
+[node name="bird_hop" type="Area2D"]
+script = ExtResource("1_a3r0x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_5gnyh")
+
+[node name="Sparrow" type="Sprite2D" parent="."]
+texture = ExtResource("2_prqfp")
+
+[node name="Shadow" parent="." instance=ExtResource("3_1f0dx")]
+position = Vector2(-2, 21)
+
+[node name="WaitTimer" type="Timer" parent="."]
